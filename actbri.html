@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brisa lcdl</title>
+</head>
+<body>
+    <form method="post" action="index.js" enctype="multipart/form-data">
+    <h1>Biblioteca</h1>
+    <fieldset>
+        <legend>ingrese usuario</legend>
+        <label for="select">es nuevo?</label><br>
+        <input type="radio" name="resp" value="Y" id="Y" checked required >
+        <label for="Y">Si</label> <br>
+        <input type="radio" name="resp" value="N" id="N" >
+        <label for="N">No</label> <br>
+
+        <h3>complete</h3>        
+        <label for="nombreusuario" >nombre completo</label><br>
+            <input type="text" name="nombrecomp" id="nombrecomp" size="75" required><br>
+            <label for="COd">Cod usuario</label><br>
+            <input type="text" name="COd" id="COd" maxlength="10" readonly><br>
+            <label for="password">password</label><br>
+            <input type="text" name="password" id="password" size="50" required><br>
+    </fieldset >
+    <fieldset>
+        <legend>ingrese el libro</legend>
+        <label for="nombreusuario" >nombre del libro</label><br>
+        <input type="text" name="nombrecomp" id="nombrecomp" required><br>
+        <label for="nombreusuario" >Autor</label><br>
+        <input type="text" name="nombrecomp" id="nombrecomp" ><br>
+
+        <label for="idioma">seleccione el idioma</label>
+            <select name="idioma" id="idioma" required>
+                <option value="es">español</option>
+                <option value="ing">ingles</option>
+                <option value="por">portuges</option>
+            </select> <br>
+
+            <label for="opi">opiniones</label> <br>
+            <textarea cols="15" rows="50"></textarea> <br>
+
+            <label for="roto">recibio daños?</label ><br>
+            <input type="radio" name="roto" value="Y" id="Y" checked required>
+            <label for="Y">Si</label> <br>
+            <input type="radio" name="roto" value="N" id="N" >
+            <label for="N">No</label> <br>
+            <label for="portada">suba una imagen de las portada</label>
+            <input type="file" name="portada" id="portada"><br>
+    </fieldset>
+    
+    <label for="following">desea recibir notificaciones por</label> <br>
+    <input type="checkbox" value="accept" name="mail">
+    <label for="mail">gmail</label><br>
+    <input type="checkbox" value="accept" name="watsapp">
+    <label for="payrol">Whatsapp</label><br>
+
+    <input type="submit" name="ingresar" value="enviar datos">
+    <input type="reset" name="borrar todo" value="borrar datos " disabled>
+</form>
+</body>
+</html>
